@@ -1,0 +1,113 @@
+$font-heading: 'Major Mono Display', monospace;
+$secondary-heading: 'Nova Mono', monospace;
+$calculator-container-colour: #212529;
+$secondary-calc-colour: #343a40;
+$body-bg-colour: #e9ecef;
+
+html{
+    min-height: 100% !important;
+}
+body, html{
+    width:100% !important;
+    height:100% !important;
+    background-color:$body-bg-colour;
+}
+#root{
+    height:100% !important;
+}
+#main-container{
+    height:100%;
+}
+#calculator-container{
+    width:40%;
+    height:95%;
+    background-color:$calculator-container-colour;
+    margin:2% auto;
+    text-align:center;
+    border: 1px solid #adb5bd;
+    border-radius: 3.5px;
+    box-shadow: 0px 0px 2px 3px rgba(0,0,0,0.8);
+    #heading{
+        font-family: $secondary-heading;
+        padding:3% 0;
+        font-weight: bold;
+        font-size:2rem;
+        text-shadow: 2px 1px $secondary-calc-colour;
+        background-color:$secondary-calc-colour;
+        width:40%;
+        margin:0 auto;
+        border: 2px solid $secondary-calc-colour;
+        color: white;
+        box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.8);
+    }
+
+}
+
+#top-row{
+    display:flex;
+    background-color:#6c757d;
+    box-shadow:0px 0px 2px 3.5px rgba(0,0,0,0.6);
+    width:80%;
+    padding:2%;
+    margin:0 auto;
+}
+#bottom-buttons{
+    display:flex;
+    height:100%;
+    background-color:#6c757d;
+    box-shadow:0px 0px 2px 3.5px rgba(0,0,0,0.6);
+    width:83.8%;
+    margin:10% auto 0 auto;
+    #right-op-buttons{
+        display:flex;
+        flex-basis:20%;
+        margin-top:5%;
+        flex-direction:column;
+        *{
+            margin:10%;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+    }
+}
+
+#number-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:5%;
+    width:80%;
+    margin-left:3%;
+    padding:5%;
+
+}
+
+@media (max-width:1400px){
+    #calculator-container{
+        width:80% !important;
+        #heading{
+            font-size:1.5rem;
+        }
+    }
+}
+@media (max-width:768px){
+    #calculator-container{
+        width:98% !important;
+        height:98%;
+        #heading{
+            font-size:1.5rem;
+        }
+    }
+}
+
+@media (max-width:500px){
+    #calculator-container{
+        width:98% !important;
+        height:98%;
+        #heading{
+            font-size:1.2rem !important;
+        }
+    }
+}
+
+

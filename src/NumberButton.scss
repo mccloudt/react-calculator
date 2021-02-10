@@ -1,0 +1,33 @@
+$button-colour: #adb5bd;
+$secondary-heading: 'Share Tech Mono', monospace;
+#button-container{
+    flex: 1 1 28%;
+    height:50px;
+    background-color:$button-colour;
+    color:darkslategray;
+    font-size:1.5rem;
+    margin:3% 1%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    box-shadow:0px 0px 5px 2px rgba(0,0,0,0.7);
+    user-select: none;
+    font-family: $secondary-heading;
+
+    transition: background-color .2s;
+}
+.C {
+    background-color: #6e1423 !important;
+    color:white !important;
+}
+
+.eq{
+    background-color: #16db93 !important;
+    color: black !important;
+}
+
+.pressed-true{
+    background-color: rgba(0,0,0,0.9) !important;
+    transition: background-color .2s !important;
+}
+
